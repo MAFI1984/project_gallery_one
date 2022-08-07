@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+   <link rel="stylesheet" href="./lightbox/css/lightbox.min.css">
+  <link rel="stylesheet" href="../dist/css/main.css">
+</head>
+<body>
+  <div id="home-bg">
+  <div class="header">
+       <div class="container">
+           <div class="header-wrapper">
+               <div class="header-wrapper__left">
+                   <img src="../images/logo2.png" alt="image" class="header-wrapper__img">
+                   <span class="header-wrapper__text">gallery</span>
+               </div>
+               <div class="header-wrapper__right">
+                  <ul class="header-wrapper__list">
+                     <li class="header-wrapper__item"><a href="index.html" class="header-wrapper__link">Home</a></li>
+                     <li class="header-wrapper__item"><a href="gallery.html" class="header-wrapper__link">Gallery</a></li>
+                     <li class="header-wrapper__item"><a href="registration.html" class="header-wrapper__link">Registration</a></li>
+                  </ul>
+               </div>
+           </div>
+       </div>
+  </div>
+
+  <div class="container">
+    <div class="content">
+       <div class="content__left">
+           <h2 class="content__heading">VISUALIZE AND ACHIEVE</h2>
+           <p class="content__paragraph">Collaboration, creativity, and respect build life long connections that matter and make a different, propelling us to work together across all.</p>
+           <div class="content__wrapper">
+              <span class="content__span">&checkmark;</span>
+              <span class="content__text">Thes famous life saying and quotes about life will inspire positivity and good, happy feelings. Enjoy some inspriration.</span>
+           </div>
+
+           <div class="content__wrapper">
+              <span class="content__span">&checkmark;</span>
+              <span class="content__text">The greatest glory in libing lies not in never falling, but in rising every time we all. The way to get started is to quite talking and being goidng.</span>
+           </div>
+
+           <div class="content__wrapper">
+              <span class="content__span">&checkmark;</span>
+              <span class="content__text">You time is limited, so don't waste it living someone else's life. Don't be trapped by dogma which is living with the results of other people's thinking.</span>
+           </div>
+       </div>
+       <div class="content__right">
+            <div class="form-wrapper">
+                <form action="" class="form-wrapper__one">
+                    <h3 class="form-wrapper__heading">Search for topics</h3>
+                    <div class="form-wrapper__group">
+                       <input type="search" class="form-wrapper__input" required >
+                    </div>
+                    <div class="form-wrapper__group">
+                       <input type="submit" value="Search" class="form-wrapper__input">
+                    </div>
+                </form>
+                <form action="" class="form-wrapper__two">
+                      <h3 class="form-wrapper__heading">Please login your details</h3>
+                    <div class="form-wrapper__group">
+                      <label for="label" class="form-wrapper__label">Username</label>
+                       <input type="text" class="form-wrapper__input" id="label" required>
+                    </div>
+                    <div class="form-wrapper__group">
+                      <label for="email" class="form-wrapper__label">Email</label>
+                       <input type="email" class="form-wrapper__input" id="email" required>
+                    </div>
+                    <div class="form-wrapper__group">
+                       <input type="submit" value="login" class="form-wrapper__input">
+                    </div>
+                </form>
+            </div>
+       </div>
+    </div>
+  </div>
+</div>
+<!--content ends here-->
+<!--footer start here-->
+
+<footer id="footer-bg">
+   <div class="container">
+      <div class="footer">
+           <ul class="footer__list">
+            <li class="footer__item">
+               <a href="https://www.facebook.com" class="footer__link" target="_black">
+                  <img src="../images/facebook.png" alt="facebook" class="footer__img">
+               </a>
+            </li>
+            <li class="footer__item">
+               <a href="https://www.twitter.com" class="footer__link" target="_black">
+                  <img src="../images/twitter.png" alt="twitter" class="footer__img">
+               </a>
+            </li>
+            <li class="footer__item">
+               <a href="https://www.instagram.com" class="footer__link" target="_black">
+                  <img src="../images/instagram.png" alt="instagram" class="footer__img">
+               </a>
+            </li>
+            <li class="footer__item">
+               <a href="https://www.youtube.com" class="footer__link" target="_black">
+                  <img src="../images/youtube.png" alt="youtube" class="footer__img">
+               </a>
+            </li>
+           </ul>
+           <div class="date"></div>
+          
+      </div>
+   </div>
+      
+</footer>
+ <script src="./lightbox/js/jquery.js"></script>
+  <script src="./lightbox/js/lightbox.min.js"></script>
+  <script>
+    setInterval(()=>{
+      let date = new Date().toLocaleString()
+      document.querySelector(".date").innerText = date
+    
+    },1000)
+  </script>
+</body>
+</html>

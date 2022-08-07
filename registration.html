@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+   <link rel="stylesheet" href="./lightbox/css/lightbox.min.css">
+  <link rel="stylesheet" href="../dist/css/main.css">
+</head>
+<body>
+  <div id="registration-bg">
+  <div class="header">
+       <div class="container">
+           <div class="header-wrapper">
+               <div class="header-wrapper__left">
+                   <img src="../images/logo2.png" alt="image" class="header-wrapper__img">
+                   <span class="header-wrapper__text">gallery</span>
+               </div>
+               <div class="header-wrapper__right">
+                  <ul class="header-wrapper__list">
+                     <li class="header-wrapper__item"><a href="index.html" class="header-wrapper__link">Home</a></li>
+                     <li class="header-wrapper__item"><a href="gallery.html" class="header-wrapper__link">Gallery</a></li>
+                     <li class="header-wrapper__item"><a href="registration.html" class="header-wrapper__link">Registration</a></li>
+                  </ul>
+               </div>
+           </div>
+       </div>
+  </div>
+  
+   <div class="container">
+      <form action="#" class="form">
+        <div class="form__group">
+          <h2 class="form__heading">please enter your details</h2>
+        </div>
+        <div class="form__group">
+          <input type="text" class="form__input" placeholder="Surname" required>
+        </div>
+        <div class="form__group">
+          <input type="text" class="form__input" placeholder="Othername" required>
+        </div>
+        <div class="form__group">
+          <input type="email" class="form__input" placeholder="Email Address" required>
+        </div>
+        <div class="form__group">
+          <input type="password" class="form__input" placeholder="Enter password" required>
+        </div>
+        <div class="form__group">
+          <input type="password" class="form__input" placeholder="Confirm password" required>
+        </div>
+        <div class="form__group">
+            <select name="" id="" class="form__input">
+              <option value="">Select your gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+        </div>
+        <div class="form__group">
+          <input type="date" class="form__input" required>
+        </div>
+         <div class="form__group">
+          <input type="submit" class="form__input form__input--btn" value="Register">
+        </div>
+        
+      </form>
+   </div>
+   </div>
+
+
+
+
+  
+<footer id="footer-bg">
+   <div class="container">
+      <div class="footer">
+           <ul class="footer__list">
+            <li class="footer__item">
+               <a href="https://www.facebook.com" class="footer__link" target="_black">
+                  <img src="../images/facebook.png" alt="facebook" class="footer__img">
+               </a>
+            </li>
+            <li class="footer__item">
+               <a href="https://www.twitter.com" class="footer__link" target="_black">
+                  <img src="../images/twitter.png" alt="twitter" class="footer__img">
+               </a>
+            </li>
+            <li class="footer__item">
+               <a href="https://www.instagram.com" class="footer__link" target="_black">
+                  <img src="../images/instagram.png" alt="instagram" class="footer__img">
+               </a>
+            </li>
+            <li class="footer__item">
+               <a href="https://www.youtube.com" class="footer__link" target="_black">
+                  <img src="../images/youtube.png" alt="youtube" class="footer__img">
+               </a>
+            </li>
+           </ul>
+           <div class="date"></div>
+          
+      </div>
+   </div>
+      
+</footer>
+ <script src="./lightbox/js/jquery.js"></script>
+  <script src="./lightbox/js/lightbox.min.js"></script>
+  <script>
+    setInterval(()=>{
+      let date = new Date().toLocaleString()
+      document.querySelector(".date").innerText = date
+    
+    },1000)
+  </script>
+</body>
+</html>

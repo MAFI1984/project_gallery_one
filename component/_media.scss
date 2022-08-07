@@ -1,0 +1,47 @@
+// desktop == 1920px / 16 = 120em
+// tab-land == 1100px / 16  = 68.75em 
+// tab-port == 900px / 16 = 56.25em
+// tab-small == 750px /16 = 46.875em
+// phone == 600px / 16 = 37.5em
+// small == 400px / 16 = 25em
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == desktop{
+    @media(min-width:120em){
+      @content
+    }
+  };
+
+   @if $breakpoint == tab-land{
+    @media(max-width:68.75em){
+      @content
+    }
+  };
+
+   @if $breakpoint == tab-port{
+    @media(max-width:56.25em){
+      @content
+    }
+  };
+  
+   @if $breakpoint == tab-small{
+    @media(max-width:46.875em){
+      @content
+    }
+  };
+
+   @if $breakpoint == phone{
+    @media(max-width:37.5em){
+      @content
+    }
+  };
+
+   @if $breakpoint == small{
+    @media(max-width:25em){
+      @content
+    }
+  };
+
+
+
+}
